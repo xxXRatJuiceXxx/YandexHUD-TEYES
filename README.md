@@ -60,6 +60,6 @@
 
 C# / .NET 9 for Android. [Инструкция сборки](docs/BUILDING.ru.md), [изменения](CHANGELOG.md), [сообщить об ошибке](https://github.com/xxXRatJuiceXxx/YandexHUD-TEYES/issues/new/choose).
 
-Это неофициальный общественный проект. Он основан на [avashield/WiiYiiHudNavigator](https://github.com/avashield/WiiYiiHudNavigator); за основу взяты общие модели и интерфейс HUD, добавлены чтение Яндекса и самостоятельное Android-приложение. Авторство сохранено в [NOTICE](NOTICE.md). Лицензия — [GNU GPL v3](LICENSE). Проект не связан с Яндексом, TEYES или производителем WiiYii.
+Это неофициальный общественный проект. Он основан на [avashield/WiiYiiHudNavigator](https://github.com/avashield/WiiYiiHudNavigator); за основу взяты общие модели и интерфейс HUD, добавлены чтение Яндекса и самостоятельное Android-приложение. Авторство сохранено в [NOTICE](NOTICE.md). Лицензия — [GNU AGPL v3](LICENSE). Проект не связан с Яндексом, TEYES или производителем WiiYii.
 
 **English:** An unofficial standalone Android bridge from Yandex Navigator to a WiiYii C1 Bluetooth HUD, initially developed for TEYES CC4. Download the APK from Releases. Android 8+; optional on-screen arrow recognition requires Android 11+. Russian setup and build documentation is included.

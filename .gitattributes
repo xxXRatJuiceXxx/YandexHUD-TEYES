@@ -1,8 +1,2 @@
-* text=auto
-*.cs text eol=lf
-*.csproj text eol=lf
-*.xml text eol=lf
-*.md text eol=lf
-*.ps1 text eol=lf
-*.yml text eol=lf
-*.json text eol=lf
+# Preserve the original 1.4 source bytes, including line endings.
+* -text
