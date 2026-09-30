@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <SupportedOSPlatformVersion>26.0</SupportedOSPlatformVersion>
+    <ApplicationId>com.avashield.yandexhud.headunit</ApplicationId>
+    <ApplicationVersion>5</ApplicationVersion>
+    <ApplicationDisplayVersion>1.4</ApplicationDisplayVersion>
+    <RuntimeIdentifiers>android-arm64;android-arm</RuntimeIdentifiers>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidPackageFormats>apk</AndroidPackageFormats>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <PublishTrimmed>false</PublishTrimmed>
+    <RunAOTCompilation>false</RunAOTCompilation>
+    <DefineConstants>$(DefineConstants);HEADUNIT</DefineConstants>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CA1422</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../YandexNotificationBridge/*.cs" Exclude="../YandexNotificationBridge/MainActivity.cs;../YandexNotificationBridge/BridgeServer.cs" Link="Reader/%(Filename)%(Extension)" />
+    <Compile Include="../WiiYiiHudNavigator.Plugin.Yandex/BridgeState.cs" Link="Mapping/BridgeState.cs" />
+    <Compile Include="../WiiYiiHudNavigator.Plugin.Yandex/HudText.cs" Link="Mapping/HudText.cs" />
+    <Compile Include="../WiiYiiHudNavigator.Common/Models/HudNavigationData.cs" Link="Models/HudNavigationData.cs" />
+    <Compile Include="../WiiYiiHudNavigator.Common/Models/DirectionInstruction.cs" Link="Models/DirectionInstruction.cs" />
+    <Compile Include="../WiiYiiHudNavigator.Common/Models/LaneGuidance.cs" Link="Models/LaneGuidance.cs" />
+  </ItemGroup>
+</Project>

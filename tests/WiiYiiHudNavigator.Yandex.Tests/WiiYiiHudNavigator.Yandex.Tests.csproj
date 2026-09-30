@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/HudText.cs" Link="HudText.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/HudOutputPump.cs" Link="HudOutputPump.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Hud/IHudConnection.cs" Link="IHudConnection.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/ScreenNavigationReader.cs" Link="ScreenNavigationReader.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/ScreenArrowGuard.cs" Link="ScreenArrowGuard.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/ScreenArrowMask.cs" Link="ScreenArrowMask.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/BridgeState.cs" Link="SourceBridgeState.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/SourceSelector.cs" Link="SourceSelector.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/CameraText.cs" Link="CameraText.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/YandexNotificationParser.cs" Link="YandexNotificationParser.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/BridgeState.cs" Link="BridgeState.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/HudNavigationData.cs" Link="HudNavigationData.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/DirectionInstruction.cs" Link="DirectionInstruction.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/LaneGuidance.cs" Link="LaneGuidance.cs" />
+  </ItemGroup>
+</Project>

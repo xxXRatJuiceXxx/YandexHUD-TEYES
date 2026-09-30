@@ -1,0 +1,19 @@
+name: Navigation and HUD tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+      - name: Navigation state and recognition guards
+        run: dotnet run --project tests/WiiYiiHudNavigator.Yandex.Tests -c Release
+      - name: HUD protocol and connection recovery
+        run: dotnet run --project tests/YandexHudHeadUnit.Tests -c Release

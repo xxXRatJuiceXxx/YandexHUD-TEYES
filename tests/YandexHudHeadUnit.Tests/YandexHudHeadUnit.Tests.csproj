@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DefineConstants>$(DefineConstants);HEADUNIT</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/YandexHudHeadUnit/HudProtocol.cs" Link="HudProtocol.cs" />
+    <Compile Include="../../src/YandexHudHeadUnit/HudPacketWriter.cs" Link="HudPacketWriter.cs" />
+    <Compile Include="../../src/YandexHudHeadUnit/ReconnectPolicy.cs" Link="ReconnectPolicy.cs" />
+    <Compile Include="../../src/YandexHudHeadUnit/HudArrowCheck.cs" Link="HudArrowCheck.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/BridgeState.cs" Link="SourceState.cs" />
+    <Compile Include="../../src/YandexNotificationBridge/NavigationSource.cs" Link="NavigationSource.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/BridgeState.cs" Link="BridgeState.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Plugin.Yandex/HudText.cs" Link="HudText.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/HudNavigationData.cs" Link="HudNavigationData.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/DirectionInstruction.cs" Link="DirectionInstruction.cs" />
+    <Compile Include="../../src/WiiYiiHudNavigator.Common/Models/LaneGuidance.cs" Link="LaneGuidance.cs" />
+  </ItemGroup>
+</Project>

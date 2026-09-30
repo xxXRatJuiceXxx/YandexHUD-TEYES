@@ -1,0 +1,22 @@
+name: Ошибка навигации или подключения
+description: Сообщить о проблеме с Яндекс HUD
+body:
+  - type: textarea
+    id: versions
+    attributes:
+      label: Устройство и версии
+      description: Версия Яндекс HUD, модель магнитолы, Android/API, версия Навигатора, модель HUD.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Что происходит
+      description: Шаги воспроизведения, ожидаемое и фактическое поведение. Открыт Навигатор или свёрнут? Работает ли ручной тест стрелок?
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Диагностика (по желанию)
+      description: Текст из кнопки «Скопировать диагностику». Просмотрите его перед публикацией и удалите личные данные. Снимки экрана не обязательны.
